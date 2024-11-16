@@ -1,0 +1,38 @@
+{
+  "name": "bit-marker",
+  "version": "1.0.1",
+  "description": "二进制位标记处理，无位数限制",
+  "main": "dist/index.common.js",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "test": "jest --collectCoverageFrom --watchAll",
+    "build": "webpack --mode=production",
+    "prepublishOnly": "npm config set registry https://registry.npmjs.org/ && npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "BitMarker",
+    "位标记"
+  ],
+  "author": {
+    "name": "牛书书",
+    "email": "lushg@foxmail.com",
+    "url": "https://wintc.top/about?from=bit-marker"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wintc23/bit-marker.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
